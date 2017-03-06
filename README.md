@@ -3,7 +3,7 @@
 
 CPConfettiView is fun animation when user input keyword:
 
-[![CI Status](https://travis-ci.org/at-phuongvnc/CPConfettiView.svg?style=flat)](https://travis-ci.org/at-phuongvnc/CPMenuView)
+[![CI Status](https://travis-ci.org/phuongvnc/CPConfettiView.svg?style=flat)](https://travis-ci.org/at-phuongvnc/CPMenuView)
 [![Version](https://img.shields.io/cocoapods/v/CPConfettiView.svg?style=flat)](http://cocoapods.org/pods/CPMenuView)
 [![License](https://img.shields.io/cocoapods/l/CPConfettiView.svg?style=flat)](http://cocoapods.org/pods/CPMenuView)
 [![Platform](https://img.shields.io/cocoapods/p/CPConfettiView.svg?style=flat)](http://cocoapods.org/pods/CPMenuView)
