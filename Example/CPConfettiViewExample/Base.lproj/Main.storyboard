@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CPConfettiViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MyS-f5-6cz" customClass="CPConfettiView" customModule="CPConfettiViewExample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sjH-yr-fJB">
+                                        <rect key="frame" x="127" y="382.5" width="121" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="Hky-ra-6I9"/>
+                                            <constraint firstAttribute="width" constant="121" id="vzW-fL-bRa"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Top"/>
+                                            <segment title="Bottom"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfD-Uw-sss">
+                                        <rect key="frame" x="0.0" y="356.5" width="375" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input keyword is &quot;beer&quot; or &quot;heart&quot;" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hnP-GV-mMu">
+                                        <rect key="frame" x="48" y="308" width="279" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="edditingChangValueCommentWithSender:" destination="BYZ-38-t0r" eventType="editingChanged" id="kkv-P7-UJT"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="sjH-yr-fJB" firstAttribute="centerX" secondItem="MyS-f5-6cz" secondAttribute="centerX" id="2s9-I0-6sb"/>
+                                    <constraint firstItem="sjH-yr-fJB" firstAttribute="top" secondItem="HfD-Uw-sss" secondAttribute="bottom" constant="5" id="81C-tl-ywD"/>
+                                    <constraint firstAttribute="trailing" secondItem="hnP-GV-mMu" secondAttribute="trailing" constant="48" id="UVO-6X-Y3g"/>
+                                    <constraint firstAttribute="trailing" secondItem="HfD-Uw-sss" secondAttribute="trailing" id="WkU-hJ-Ohq"/>
+                                    <constraint firstItem="hnP-GV-mMu" firstAttribute="leading" secondItem="MyS-f5-6cz" secondAttribute="leading" constant="48" id="XDB-uF-aps"/>
+                                    <constraint firstItem="HfD-Uw-sss" firstAttribute="leading" secondItem="MyS-f5-6cz" secondAttribute="leading" id="ZNG-C1-QWb"/>
+                                    <constraint firstItem="hnP-GV-mMu" firstAttribute="centerX" secondItem="MyS-f5-6cz" secondAttribute="centerX" id="gc5-w3-fxZ"/>
+                                    <constraint firstItem="HfD-Uw-sss" firstAttribute="top" secondItem="hnP-GV-mMu" secondAttribute="bottom" constant="18.5" id="jl1-r0-Xp5"/>
+                                    <constraint firstItem="hnP-GV-mMu" firstAttribute="centerY" secondItem="MyS-f5-6cz" secondAttribute="centerY" constant="-10.5" id="z2k-mv-lFM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MyS-f5-6cz" secondAttribute="trailing" id="5Do-Ih-lhe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MyS-f5-6cz" secondAttribute="bottom" id="JzD-3h-2Ep"/>
+                            <constraint firstItem="MyS-f5-6cz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="S6a-Kj-sXb"/>
+                            <constraint firstItem="MyS-f5-6cz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hWg-Kd-7jk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confettiView" destination="MyS-f5-6cz" id="iC4-Ib-lIK"/>
+                        <outlet property="directionSegment" destination="sjH-yr-fJB" id="ZZy-p6-o0l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
