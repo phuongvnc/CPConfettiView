@@ -22,4 +22,5 @@ before_install:
 script:
 - set -o pipefail
 - xcodebuild clean test -workspace Example/CPConfettiViewExample.xcworkspace -scheme CPConfettiViewExample -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6"
+- pod lib lint --allow-warnings
   
