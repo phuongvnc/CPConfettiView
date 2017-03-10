@@ -1,4 +1,4 @@
-# CPMenuView
+# CPConfettiView
 
 
 CPConfettiView is fun animation when user input keyword:

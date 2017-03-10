@@ -14,13 +14,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let confettiView = CPConfettiView(frame: UIScreen.main.bounds)
-        confettiView.direction = .Top
-        confettiView.intensity = 0.5
-        confettiView.setImageForConfetti(image: UIImage(named:"heart")!)
-        view.addSubview(confettiView)
-        confettiView.startConfetti(duration:3)
     }
 
     override func didReceiveMemoryWarning() {
